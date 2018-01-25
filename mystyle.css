@@ -1,0 +1,65 @@
+
+body{ background-color:  }
+#input{display: none;
+margin-top:2% }
+
+#field{
+		background-color: #2980b9;
+		border:1px solid #ffffee;
+		border-radius: 4px;
+}
+
+.bg{background-color: #241A7a}
+
+.mycontainer{margin-top: 20px;
+padding: 15px 0 15px 0;}
+
+ul{
+	margin: 5%;
+	padding:2%;
+}
+
+ul li{list-style: none;  }
+
+ul li input{
+	margin: 10px;
+}
+
+div#menu{
+	float: left;
+	width:30%;
+	height: 80%;
+	border-right:2px solid #ffffee;
+	background-color: hsla(199, 100%, 100%, 0.42);
+	margin: 10px 0 20px 0; 
+	box-sizing: border-box;
+	
+}
+
+div#resultdiv{
+	float: left;
+	width:60%;
+	height: 100%;
+	margin-left: 15px; 
+
+
+}
+
+.clear{clear: both;}
+
+
+#conwithdraw, #condeposit{
+	display: none;
+	margin-top:2%; 
+}
+ h2{
+ 	display: none;
+ 	margin: 10px 0 20px 0;
+ 	padding: 15px 0 15px 20px;
+	border:1px solid #ffffee;
+	width:100%;
+	height:auto;
+	background-color: hsla(199, 100%, 100%, 0.42);
+	box-sizing: border-box;
+	color: #ee1111;
+	}

@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+	<script
+  src="https://code.jquery.com/jquery-1.12.4.min.js"
+  integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+  crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="mystyle.css">
+ 
+
+</head>
+<body>
+<div class="container-fluid bg">
+	<div class="row mycontainer">
+		<div class="col-md-2">
+			
+		</div>
+		<div class="col-md-8">
+			<h1 class="text-light" style="text-align: center;">WELCOME TO JOHN BANK </h1>
+		<form id="field">
+
+			<div id="menu">
+			<ul>
+				<li>
+					<input type="button" id="balinquiry" class="btn btn-light" name="" value="BALANCE INQUIRY" onclick="bal_inquiry()">	
+				</li>
+				<li>
+					<input type="button" class="btn btn-light"  value="BACK TO MENU" name="" onclick="window.location.href='mainmenu.html'">
+				</li>
+				<li>
+					<input type="button" class="btn btn-outline-light" value="EXIT" onclick="exit()">
+				</li>
+			</ul>
+			</div>
+
+			<div id="resultdiv">
+				<h2 id="result">
+					
+				</h2>
+			</div>	
+			<div class="clear"></div>				
+		</form>
+		</div>
+		<div class="col-md-2">
+			
+		</div>	
+	</div>
+	<div class="row">
+		<div class="col-md-2">
+			
+		</div>
+		<div class="col-md-8">
+			
+			<div class="spacer"></div>
+				
+			
+		</div>
+		<div class="col-md-2">
+			
+		</div>
+	</div>
+</div>
+
+
+
+
+<script src="atm.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+</html>

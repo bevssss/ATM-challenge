@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>JOHN BANK LOGIN</title>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+   <script
+ src="https://code.jquery.com/jquery-1.12.4.min.js"
+ integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+ crossorigin="anonymous"></script>
+
+ <style>
+.background{
+    
+    background-color: #241A7A;
+    text-align: center;
+}
+h1{
+    padding: 60px;
+    text-align: center;
+    color:#ffffff;
+}
+h2{
+    text-align: center;
+    color:yellow;
+}
+
+h4{
+    padding-top: 50px;
+    padding-bottom: 40px;
+    text-align: center;
+    color:#ffffff;
+}
+label{
+    color:#ffffff;
+}
+div.container{
+    width: 900px;
+    height: 610px;
+    
+}
+span{
+    color:#ffffff;
+    padding:50px;
+}
+b.note{
+    
+}
+#username{
+    padding:0;
+}
+#password{
+
+}
+#submit{
+    margin:20px;
+}
+.space{
+    padding: 50px;
+}
+ </style>
+  
+
+<script>
+var attempt = 3;
+
+function validate(){
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
+        if ( username == "Nats" && password == "hello123"){
+            alert ("Login successful! You will be redirected to the main page shortly.");
+            window.location = "mainmenu.html"; 
+            return false;
+        }
+        else{
+        attempt --;
+        alert("Password is incorrect. Please try again. You have "+attempt+" attempt(s) left.");
+        if( attempt == 0){
+        document.getElementById("username").disabled = true;
+        document.getElementById("password").disabled = true;
+        document.getElementById("submit").disabled = true;
+        return false;
+        }
+    }
+}
+
+</script>
+</head>
+<body>
+
+    <div class="container-fluid background">
+    <div class="main">
+        <h1>WELCOME TO JOHN BANK</h1><br>
+        <h2>"Ang bangkong an-JOHN para sa inyo"</h2>
+        <h4>Please Log-in below</h4>
+        <form id="form_id" method="post" name="myform">
+        <label>User Name :</label><br>
+        <input type="text" name="username" id="username"/><br>
+        <label>Password :</label><br>
+        <input type="password" name="password" id="password"/><br>
+        <input type="button" value="LOGIN" id="submit" onclick="validate()"/>
+        </form>
+        <br><span><b class = "note"> Note: You only have 3 login attempts.</b></span> 
+        <div class="space"></div>
+
+    </div>
+    </div>
+    
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
